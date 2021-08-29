@@ -1,0 +1,18 @@
+"""Printing expressions by combining str and int."""
+__author__ = "730396516"
+left = int(input("Left-hand side: "))
+right = int(input("Right-hand side: "))
+power = int(left ** right)
+exponent = str(power)
+converted_left = str(left)
+converted_right = str(right)
+print(converted_left + " ** " + converted_right + " is " + exponent)
+division = float(left / right)
+string_division = str(division)
+print(converted_left + " / " + converted_right + " is " + string_division)
+integer_division = int(left // right)
+string_integer_division = str(integer_division)
+print(converted_left + " // " + converted_right + " is " + string_integer_division)
+remainder = int(left % right)
+string_remainder = str(remainder)
+print(converted_left + " % " + converted_right + " is " + string_remainder)
