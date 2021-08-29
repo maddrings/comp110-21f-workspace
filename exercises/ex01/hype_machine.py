@@ -1,11 +1,5 @@
 """Hype phrases with your name as a variable."""
-
-__author__ = "730396516"
-
-name: str = input("What is your name? ")
-print("You entered: ")
-print(name)
-
+__author__ = str("730396516")
 name: str = input("What is your name? ")
 print(name + ", you rock!")
 print("That's right, " + name + ", you are a baddie!")
