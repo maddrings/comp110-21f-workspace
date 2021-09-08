@@ -13,9 +13,12 @@ s: str = ""
 
 
 while counter < maximum:
-    if number >= 1:
-        s = s + str(beat + " ")
+    if number < 1:
+        s: str(print("No beat..."))
     else:
-        s = s + "No beat..."
+        if number >= 1:
+            s = s + beat
+        if number < maximum:
+            s = s + " "
     counter = counter + 1
 print(s)
