@@ -17,5 +17,3 @@ while i < length:
         count = 0
     i = i + 1
 print("Count: " + str(count))
-    
-
