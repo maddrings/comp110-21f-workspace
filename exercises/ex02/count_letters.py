@@ -10,6 +10,7 @@ word = str(input("Enter a word: "))
 length = int(len(word))
 count = 0
 i = 0
+
 while i < length:
     if word[i] == letter:
         count = count + 1

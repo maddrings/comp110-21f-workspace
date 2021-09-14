@@ -1,21 +1,23 @@
 """Repeating a beat in a loop."""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730396516"
 
 
 # Begin your solution here...
 beat = str(input("What beat do you want to repeat? "))
 number = int(str(input("How many times do you want to repeat it? ")))
-maximum = int(number + 1)
 counter: int = 1
-none = str("No beat...")
 s: str = ""
+space = int(number - 1)
 
-
-while counter < maximum:
-    if number >= 1:
-        s = s + str(beat + " ")
-    else:
-        s = s + "No beat..."
-    counter = counter + 1
-print(s)
+if number <= 0:
+    print("No beat...")
+else:
+    while counter <= number:
+        if space < number:
+            s = s + beat
+            space = space + 1
+        else:
+            s = s + " " + beat
+        counter = counter + 1
+    print(s)

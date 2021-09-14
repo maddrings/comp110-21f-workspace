@@ -13,7 +13,7 @@ from random import randint
 
 
 # Begin your solution here...
-fortune = str(print("Your fortune cookie says..."))
+print("Your fortune cookie says...")
 phrase = int(randint(1, 4))
 if phrase == 1:
     print("This is going to be the best day EVER!!")
@@ -26,5 +26,4 @@ else:
         else:
             if phrase == 4:
                 print("The best is yet to come!")
-            
 print("Now, go spread positive vibes!")
