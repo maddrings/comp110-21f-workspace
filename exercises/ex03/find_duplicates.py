@@ -5,8 +5,6 @@ __author__ = "730396516"
 word: str = input("Enter a word: ")
 i: int = 0
 length: int = len(word)
-j: int = length - 1
-dup: bool = j == i
 other = "False"
 
 
