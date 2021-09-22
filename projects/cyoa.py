@@ -1,5 +1,7 @@
 """Choose your own adventure experience."""
 
+__author__ = "730396516"
+
 from random import randint
 
 game: list[str] = ["rock", "paper", "scissors"]
@@ -15,11 +17,13 @@ version = int
 
 
 def greet() -> None:
+    """Greeting to player with instructions for game."""
     player = str(input("Enter player's name: "))
     print(f"Hello {player}!! Let's play rock-paper-scissors! When prompted, enter rock, paper, or scissors. If you beat me, you get a point. If I beat you, I get a point. First to receive 3 points wins the game. Ready? Let's go!")
 
 
 def pro() -> None:
+    """Version 1 of game."""
     points = 0
     comp_points = 0
     while (points < 3) and (comp_points < 3):
@@ -56,6 +60,7 @@ def pro() -> None:
 
 
 def fun(points: int) -> int:
+    """Version 2 of game."""
     comp_points = 0
     while (points < 3) and (comp_points < 3):
         choice = str(input("rock...paper...scissors...SHOOT!!!: "))
@@ -92,6 +97,7 @@ def fun(points: int) -> int:
 
 
 def main() -> None:
+    """Main function."""
     version = int(input("Which version (1 or 2) of the game would you like to play? "))
     while version == 1:
         greet()
