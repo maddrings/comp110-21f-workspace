@@ -6,12 +6,8 @@ from random import randint
 
 game: list[str] = ["rock", "paper", "scissors"]
 
-ROCK: str = '\U0001FAA8'
-PAPER: str = '\U0001F4C3'
-SCISSORS: str = '\U00002702'
 STAR_EYES: str = '\U0001F929'
 SAD_FACE: str = '\U0001F614'
-
 
 player: str = ""
 rock: str = "rock"
@@ -20,7 +16,6 @@ scissors: str = "scissors"
 points: int = 0
 comp_points: int = 0
 version: int = 0
-
 
 
 def greet() -> None:
